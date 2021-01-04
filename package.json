@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "StencilJS web component for displaying timestamps in relative terms that automatically update",
   "author": "Geoffrey Meredith",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": [],
   "repository": {
     "type": "git",

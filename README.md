@@ -3,3 +3,7 @@
 # Stencil Live Datetime Component
 
 This is a Stencil Web Component that displays a datetime value relative to the current time.  It is live updated as time goes on.
+
+# Status
+
+This component is in early development.  User beware!

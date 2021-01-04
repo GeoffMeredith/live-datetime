@@ -12,6 +12,7 @@ const FullDateFormat = 'MMMM D, YYYY [at] h:mm a';
 @Component({
   tag: 'live-datetime',
   styleUrl: 'live-datetime.scss',
+  shadow: true
 })
 export class LiveDatetime {
 
