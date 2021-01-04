@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Demo</title>
+		<script type="module" src="/build/live-datetime.esm.js"></script>
+		<script nomodule src="/build/live-datetime.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+		<style>
+			th, td { padding: 0 0.5em; text-align: left }
+		</style>
+	</head>
+
+	<body>
+		<h1>Examples of &lt;live-datetime&gt; tag</h1>
+		<table>
+			<script type="text/javascript">
+				let tests = [
+					['now',									moment().toISOString()],
+					['10 seconds ago',			moment().subtract(10, 'seconds').toISOString()],
+					['20 seconds ago',			moment().subtract(20, 'seconds').toISOString()],
+					['30 seconds ago',			moment().subtract(30, 'seconds').toISOString()],
+					['45 seconds ago',			moment().subtract(45, 'seconds').toISOString()],
+					['1 minute ago',				moment().subtract(1, 'minute').toISOString()],
+					['2 minutes ago',				moment().subtract(2, 'minutes').toISOString()],
+					['10 minutes ago',			moment().subtract(10, 'minute').toISOString()],
+					['1 hour ago',					moment().subtract(1, 'hour').toISOString()],
+					['2 hour ago',					moment().subtract(2, 'hour').toISOString()],
+					['1 day ago',						moment().subtract(1, 'day').toISOString()],
+					['2 days ago',					moment().subtract(2, 'day').toISOString()],
+					['1 week ago',					moment().subtract(1, 'week').toISOString()],
+					['2 weeks ago',					moment().subtract(2, 'week').toISOString()],
+					['1 month ago',					moment().subtract(1, 'month').toISOString()],
+					['2 months ago',				moment().subtract(2, 'month').toISOString()],
+					['1 year ago',					moment().subtract(1, 'year').toISOString()],
+					['2 years ago',					moment().subtract(2, 'year').toISOString()],
+					['1960-12-17T03:24:00',	'1960-12-17T03:24:00'],
+					['1500-12-17T03:24:00',	'1500-12-17T03:24:00'],
+					['0010-12-17T03:24:00',	'0010-12-17T03:24:00'],
+
+					['5 seconds from now',		moment().add(5, 'seconds').toISOString()],
+					['10 seconds from now',		moment().add(10, 'seconds').toISOString()],
+					['20 seconds from now',		moment().add(20, 'seconds').toISOString()],
+					['40 seconds from now',		moment().add(40, 'seconds').toISOString()],
+					['1 minute from now',		moment().add(1, 'minute').toISOString()],
+					['2 minutes from now',	moment().add(2, 'minute').toISOString()],
+					['3 minutes from now',	moment().add(3, 'minute').toISOString()],
+					['1 hour from now',			moment().add(1, 'hour').toISOString()],
+					['2 hours from now',		moment().add(2, 'hour').toISOString()],
+					['1 day from now',			moment().add(1, 'day').toISOString()],
+					['2 days from now',			moment().add(2, 'day').toISOString()],
+					['beginning of today',	moment().startOf('day').toISOString()],
+					['end of today',				moment().endOf('day').toISOString()],
+					['2050-12-31T23:59:59', '2050-12-31T23:59:59'],
+					['9999-12-31T23:59:59', '9999-12-31T23:59:59'],
+				];
+				// console.log(tests);
+				for (var i = 0; i < tests.length; i++) {
+					let test = tests[i];
+					document.write('<tr>');
+					document.write('<th>' + i + '</th>');
+					document.write('<th>' + test[0] + '</th>');
+					document.write('<td>' + test[1] + '</td>');
+					document.write('<td><live-datetime datetime="' + test[1] + '"></live-datetime></td>');
+					document.write('</tr>');
+				}
+			</script>
+		</table>
+
+	</body>
+
+</html>

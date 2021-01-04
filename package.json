@@ -1,0 +1,40 @@
+{
+  "name": "live-datetime",
+  "version": "0.0.1",
+  "description": "StencilJS web component for displaying timestamps in relative terms that automatically update",
+  "author": "Geoffrey Meredith",
+  "license": "UNLICENSED",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geoffmeredith/live-datetime.git"
+  },
+  "main": "./dist/index.cjs.js",
+  "module": "dist/custom-elements/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/custom-elements/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/live-datetime/live-datetime.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@stencil/core": "^2.3.0",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "@stencil/utils": "0.0.5",
+    "serve": "^11.3.2",
+    "workbox-build": "^6.0.2"
+  }
+}
