@@ -15,4 +15,4 @@ Install as with any StencilJS component.  TOOD: details.
 ```html
 <live-datetime datetime="2021-01-05T12:00:00" />
 ```
-The datetime attribute can be any format that [momentJS](https://momentjs.com/docs/#/parsing/) can parse.
+The datetime attribute can be any format that [Moment.js](https://momentjs.com/docs/#/parsing/) can parse.
