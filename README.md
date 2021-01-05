@@ -8,9 +8,11 @@ This is a StencilJS Web Component that displays a datetime value relative to the
 
 This component is in early development.  User beware!
 
-# Usage
+# Installation
 
-Install as with any StencilJS component.  TOOD: details.
+Follow the [Stencil documentation](https://stenciljs.com/docs/overview) for installation in your framework of choice.
+
+# Usage
 
 ```html
 <live-datetime datetime="2021-01-05T12:00:00" />

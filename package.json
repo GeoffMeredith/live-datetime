@@ -4,7 +4,7 @@
   "description": "StencilJS web component for displaying timestamps in relative terms that automatically update",
   "author": "Geoffrey Meredith",
   "license": "MIT",
-  "keywords": [],
+  "keywords": ["date", "time", "datetime", "stencil", "live"],
   "repository": {
     "type": "git",
     "url": "https://github.com/geoffmeredith/live-datetime.git"
