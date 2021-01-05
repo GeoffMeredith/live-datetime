@@ -1,8 +1,15 @@
-# dynamic-datetime
+# live-datetime
 
 
 
 <!-- Auto Generated Below -->
+
+
+## Properties
+
+| Property   | Attribute  | Description | Type               | Default     |
+| ---------- | ---------- | ----------- | ------------------ | ----------- |
+| `datetime` | `datetime` |             | `Moment \| string` | `undefined` |
 
 
 ----------------------------------------------
