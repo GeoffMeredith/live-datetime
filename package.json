@@ -1,6 +1,6 @@
 {
   "name": "live-datetime",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "StencilJS web component for displaying timestamps in relative terms that automatically update",
   "author": "Geoffrey Meredith",
   "license": "MIT",
